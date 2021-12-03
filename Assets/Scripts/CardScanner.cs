@@ -6,6 +6,8 @@ public class CardScanner : MonoBehaviour
 {
     bool cardTagged;
 
+    [SerializeField] Animator doorAnim;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Card"))
@@ -20,7 +22,7 @@ public class CardScanner : MonoBehaviour
         {
             print("card tagged ");
 
-
+            doorAnim.Play("DoorOpen");
 
 
             cardTagged = true;

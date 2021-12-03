@@ -59,11 +59,13 @@ public class ControllerManager : MonoBehaviour
         {
             if (hit.transform == planet)
             {
-                SceneManager.LoadScene(planetScene);
+                print("planet으로 이동");
+                //SceneManager.LoadScene(planetScene);
             }
             if (hit.transform == blackHole)
             {
-                SceneManager.LoadScene(blackHoleScene);
+                print("블랙홀으로 이동");
+                //SceneManager.LoadScene(blackHoleScene);
             }
         }
     }
