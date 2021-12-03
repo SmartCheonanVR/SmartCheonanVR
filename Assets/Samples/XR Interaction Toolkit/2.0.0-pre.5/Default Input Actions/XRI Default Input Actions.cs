@@ -791,6 +791,24 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Trigger"",
+                    ""type"": ""Button"",
+                    ""id"": ""79261d81-fa50-48ab-a8d6-71615139d7a0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Grip"",
+                    ""type"": ""Button"",
+                    ""id"": ""65adce12-eded-422a-8043-a699fb2799a8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1145,6 +1163,28 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""action"": ""UI Press Value"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""15b94ea3-edd4-43a0-beeb-456cccfd2e58"",
+                    ""path"": ""<XRController>{RightHand}/gripPressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Generic XR Controller"",
+                    ""action"": ""Grip"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""02f13b71-e0c7-4c44-b5f0-b663156ca15d"",
+                    ""path"": ""<XRController>{RightHand}/triggerPressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Generic XR Controller"",
+                    ""action"": ""Trigger"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1254,6 +1294,8 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIRightHand_Move = m_XRIRightHand.FindAction("Move", throwIfNotFound: true);
         m_XRIRightHand_RotateAnchor = m_XRIRightHand.FindAction("Rotate Anchor", throwIfNotFound: true);
         m_XRIRightHand_TranslateAnchor = m_XRIRightHand.FindAction("Translate Anchor", throwIfNotFound: true);
+        m_XRIRightHand_Trigger = m_XRIRightHand.FindAction("Trigger", throwIfNotFound: true);
+        m_XRIRightHand_Grip = m_XRIRightHand.FindAction("Grip", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1548,6 +1590,8 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
     private readonly InputAction m_XRIRightHand_Move;
     private readonly InputAction m_XRIRightHand_RotateAnchor;
     private readonly InputAction m_XRIRightHand_TranslateAnchor;
+    private readonly InputAction m_XRIRightHand_Trigger;
+    private readonly InputAction m_XRIRightHand_Grip;
     public struct XRIRightHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -1569,6 +1613,8 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         public InputAction @Move => m_Wrapper.m_XRIRightHand_Move;
         public InputAction @RotateAnchor => m_Wrapper.m_XRIRightHand_RotateAnchor;
         public InputAction @TranslateAnchor => m_Wrapper.m_XRIRightHand_TranslateAnchor;
+        public InputAction @Trigger => m_Wrapper.m_XRIRightHand_Trigger;
+        public InputAction @Grip => m_Wrapper.m_XRIRightHand_Grip;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1629,6 +1675,12 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TranslateAnchor.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
                 @TranslateAnchor.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
                 @TranslateAnchor.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
+                @Trigger.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTrigger;
+                @Trigger.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTrigger;
+                @Trigger.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTrigger;
+                @Grip.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnGrip;
+                @Grip.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnGrip;
+                @Grip.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnGrip;
             }
             m_Wrapper.m_XRIRightHandActionsCallbackInterface = instance;
             if (instance != null)
@@ -1684,6 +1736,12 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TranslateAnchor.started += instance.OnTranslateAnchor;
                 @TranslateAnchor.performed += instance.OnTranslateAnchor;
                 @TranslateAnchor.canceled += instance.OnTranslateAnchor;
+                @Trigger.started += instance.OnTrigger;
+                @Trigger.performed += instance.OnTrigger;
+                @Trigger.canceled += instance.OnTrigger;
+                @Grip.started += instance.OnGrip;
+                @Grip.performed += instance.OnGrip;
+                @Grip.canceled += instance.OnGrip;
             }
         }
     }
@@ -1761,5 +1819,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         void OnMove(InputAction.CallbackContext context);
         void OnRotateAnchor(InputAction.CallbackContext context);
         void OnTranslateAnchor(InputAction.CallbackContext context);
+        void OnTrigger(InputAction.CallbackContext context);
+        void OnGrip(InputAction.CallbackContext context);
     }
 }

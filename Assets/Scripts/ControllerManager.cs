@@ -22,6 +22,10 @@ public class ControllerManager : MonoBehaviour
     [Header("")]
     [SerializeField] string planetScene;
     [SerializeField] string blackHoleScene;
+
+    //public enum NowSceneNumber { 0, 1, 2 };
+    //public NowSceneNumber nowSceneNumber;
+   // int sceneNum;
     void Start()
     {
         leftGrip = xriInputAction.FindActionMap("XRI LeftHand").FindAction("Grip");
@@ -42,15 +46,38 @@ public class ControllerManager : MonoBehaviour
                 GetButton(leftTrigger, rightTrigger);
                 break;
         }
+
+        //현재 어느 씬인지
+        //switch (nowSceneNumber)
+        //{
+        //    case NowSceneNumber.0:
+        //            sceneNum = 0; break;
+        //    case NowSceneNumber.1:
+        //            sceneNum = 1; break;
+        //    case NowSceneNumber.2:
+        //            sceneNum = 2; break;
+        //}
     }
 
     void GetButton(InputAction left, InputAction right)
     {
         if (left.triggered && right.triggered)
         {
-            //2번째 방에서 테마선택(행성, 블랙홀)
-            SelectTheme();
+            //if (sceneNum == 0)
+            //    EnterNextRoon();
+
+            ////2번째 방에서 테마선택(행성, 블랙홀)
+            //else if (sceneNum == 1)
+                SelectTheme();
+           // else
+
+
         }
+    }
+
+    void EnterNextRoon()
+    {
+
     }
 
     void SelectTheme()
