@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 13962562}
   - component: {fileID: 13962561}
   - component: {fileID: 13962560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 24749380}
   - component: {fileID: 24749379}
   - component: {fileID: 24749378}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 168811205}
   - component: {fileID: 168811204}
   - component: {fileID: 168811203}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,6 +618,7 @@ GameObject:
   - component: {fileID: 315626751}
   - component: {fileID: 315626750}
   - component: {fileID: 315626749}
+  - component: {fileID: 315626752}
   m_Layer: 6
   m_Name: earth
   m_TagString: Planet
@@ -678,6 +679,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &315626752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315626748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &338144159
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,7 +705,7 @@ GameObject:
   - component: {fileID: 338144163}
   - component: {fileID: 338144162}
   - component: {fileID: 338144161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,7 +866,7 @@ GameObject:
   - component: {fileID: 409988272}
   - component: {fileID: 409988271}
   - component: {fileID: 409988270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,7 +994,7 @@ GameObject:
   - component: {fileID: 427403394}
   - component: {fileID: 427403393}
   - component: {fileID: 427403392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,6 +1120,7 @@ GameObject:
   - component: {fileID: 444023634}
   - component: {fileID: 444023633}
   - component: {fileID: 444023632}
+  - component: {fileID: 444023635}
   m_Layer: 6
   m_Name: mercury
   m_TagString: Planet
@@ -1167,6 +1181,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &444023635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444023631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559529901
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,7 +1305,7 @@ GameObject:
   - component: {fileID: 583229508}
   - component: {fileID: 583229507}
   - component: {fileID: 583229506}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1468,7 @@ GameObject:
   - component: {fileID: 600407733}
   - component: {fileID: 600407732}
   - component: {fileID: 600407731}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,6 +1602,7 @@ GameObject:
   - component: {fileID: 666354707}
   - component: {fileID: 666354706}
   - component: {fileID: 666354705}
+  - component: {fileID: 666354708}
   m_Layer: 6
   m_Name: jupiter
   m_TagString: Planet
@@ -1636,6 +1663,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: -20}
+--- !u!114 &666354708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666354704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &707946153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +1686,7 @@ GameObject:
   - component: {fileID: 707946156}
   - component: {fileID: 707946155}
   - component: {fileID: 707946154}
+  - component: {fileID: 707946157}
   m_Layer: 6
   m_Name: venus
   m_TagString: Planet
@@ -1707,6 +1747,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &707946157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707946153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &826132333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1773,7 @@ GameObject:
   - component: {fileID: 826132337}
   - component: {fileID: 826132336}
   - component: {fileID: 826132335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2171,7 +2223,7 @@ GameObject:
   - component: {fileID: 1082005454}
   - component: {fileID: 1082005456}
   - component: {fileID: 1082005455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2258,6 +2310,7 @@ GameObject:
   - component: {fileID: 1146114410}
   - component: {fileID: 1146114409}
   - component: {fileID: 1146114408}
+  - component: {fileID: 1146114411}
   m_Layer: 6
   m_Name: moon
   m_TagString: Planet
@@ -2318,6 +2371,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &1146114411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146114407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1148080280
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,7 +2530,7 @@ GameObject:
   - component: {fileID: 1180287035}
   - component: {fileID: 1180287034}
   - component: {fileID: 1180287033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2601,7 +2666,7 @@ GameObject:
   - component: {fileID: 1180986229}
   - component: {fileID: 1180986228}
   - component: {fileID: 1180986227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2731,7 +2796,7 @@ GameObject:
   - component: {fileID: 1243070051}
   - component: {fileID: 1243070050}
   - component: {fileID: 1243070049}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2868,7 +2933,7 @@ GameObject:
   - component: {fileID: 1337699192}
   - component: {fileID: 1337699191}
   - component: {fileID: 1337699190}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3025,6 +3090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1338821384}
+  - component: {fileID: 1338821385}
   m_Layer: 6
   m_Name: Star
   m_TagString: Planet
@@ -3048,6 +3114,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338821385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338821383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1376872207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,7 +3182,7 @@ GameObject:
   - component: {fileID: 1446369453}
   - component: {fileID: 1446369452}
   - component: {fileID: 1446369451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3286,7 +3364,7 @@ GameObject:
   - component: {fileID: 1485773092}
   - component: {fileID: 1485773091}
   - component: {fileID: 1485773090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3423,7 +3501,7 @@ GameObject:
   - component: {fileID: 1583739694}
   - component: {fileID: 1583739693}
   - component: {fileID: 1583739692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3618,7 +3696,7 @@ GameObject:
   - component: {fileID: 1629177450}
   - component: {fileID: 1629177449}
   - component: {fileID: 1629177448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3755,7 +3833,7 @@ GameObject:
   - component: {fileID: 1638619096}
   - component: {fileID: 1638619095}
   - component: {fileID: 1638619094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3913,7 +3991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697149334}
   - component: {fileID: 1697149335}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prominence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3990,7 +4068,7 @@ GameObject:
   - component: {fileID: 1705703591}
   - component: {fileID: 1705703590}
   - component: {fileID: 1705703589}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4664,7 +4742,7 @@ GameObject:
   - component: {fileID: 1774415109}
   - component: {fileID: 1774415108}
   - component: {fileID: 1774415107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Corona
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4768,7 +4846,7 @@ GameObject:
   - component: {fileID: 1815071014}
   - component: {fileID: 1815071013}
   - component: {fileID: 1815071012}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5418,6 +5496,7 @@ GameObject:
   - component: {fileID: 1834270410}
   - component: {fileID: 1834270409}
   - component: {fileID: 1834270408}
+  - component: {fileID: 1834270411}
   m_Layer: 6
   m_Name: uranus
   m_TagString: Planet
@@ -5478,6 +5557,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &1834270411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834270407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1839782190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,6 +5578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1839782191}
+  - component: {fileID: 1839782192}
   m_Layer: 6
   m_Name: saturn
   m_TagString: Planet
@@ -5511,6 +5603,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -11.925, y: 8.719, z: -40.922}
+--- !u!114 &1839782192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839782190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853584036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,6 +5626,7 @@ GameObject:
   - component: {fileID: 1853584039}
   - component: {fileID: 1853584038}
   - component: {fileID: 1853584037}
+  - component: {fileID: 1853584040}
   m_Layer: 6
   m_Name: neptune
   m_TagString: Planet
@@ -5582,6 +5687,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &1853584040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853584036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1868426682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5597,7 +5714,7 @@ GameObject:
   - component: {fileID: 1868426686}
   - component: {fileID: 1868426685}
   - component: {fileID: 1868426684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5848,7 +5965,7 @@ GameObject:
   - component: {fileID: 1935254212}
   - component: {fileID: 1935254211}
   - component: {fileID: 1935254210}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6010,7 +6127,7 @@ GameObject:
   - component: {fileID: 1997199928}
   - component: {fileID: 1997199927}
   - component: {fileID: 1997199926}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6136,6 +6253,7 @@ GameObject:
   - component: {fileID: 2014681364}
   - component: {fileID: 2014681363}
   - component: {fileID: 2014681362}
+  - component: {fileID: 2014681365}
   m_Layer: 6
   m_Name: mars
   m_TagString: Planet
@@ -6196,6 +6314,18 @@ Transform:
   m_Father: {fileID: 1376872208}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
+--- !u!114 &2014681365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014681361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3db0611b23514bbbaf44f4252856f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2031139062
 GameObject:
   m_ObjectHideFlags: 0
@@ -6206,7 +6336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2031139063}
   - component: {fileID: 2031139064}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Prominence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6349,7 +6479,7 @@ GameObject:
   - component: {fileID: 2062916661}
   - component: {fileID: 2062916660}
   - component: {fileID: 2062916659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6510,7 +6640,7 @@ GameObject:
   - component: {fileID: 2098906661}
   - component: {fileID: 2098906660}
   - component: {fileID: 2098906659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cloudsphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6639,7 +6769,7 @@ GameObject:
   - component: {fileID: 2110427554}
   - component: {fileID: 2110427553}
   - component: {fileID: 2110427552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Atmosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
