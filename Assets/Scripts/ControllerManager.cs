@@ -36,6 +36,7 @@ public class ControllerManager : MonoBehaviour
 
     void Update()
     {
+        //ControllerCheck();
         //어떤 버튼 이용할지 선택하기
         switch (butttonType)
         {
@@ -58,20 +59,44 @@ public class ControllerManager : MonoBehaviour
         //            sceneNum = 2; break;
         //}
     }
-
+    void ControllerCheck()
+    {
+        if (rightTrigger.triggered)
+            print(rightTrigger.name);
+        if (rightGrip.triggered)
+            print(rightGrip.name);
+    }
     void GetButton(InputAction left, InputAction right)
     {
-        if (left.triggered && right.triggered)
-        {
-            //if (sceneNum == 0)
-            //    EnterNextRoon();
+        if (left.triggered || right.triggered)
+        {    
+            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+            {
+                if (hit.transform == planet)
+                {
+                    print("planet으로 이동");
+                    SceneManager.LoadScene(planetScene);
+                }
+                if (hit.transform == blackHole)
+                {
+                    print("블랙홀으로 이동");
+                    //SceneManager.LoadScene(blackHoleScene);
+                }
+            }
 
-            ////2번째 방에서 테마선택(행성, 블랙홀)
-            //else if (sceneNum == 1)
-                SelectTheme();
-           // else
-
-
+            if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
+            {
+                if (hitR.transform == planet)
+                {
+                    print("planet으로 이동");
+                    SceneManager.LoadScene(planetScene);
+                }
+                if (hitR.transform == blackHole)
+                {
+                    print("블랙홀으로 이동");
+                    //SceneManager.LoadScene(blackHoleScene);
+                }
+            }
         }
     }
 
@@ -87,7 +112,7 @@ public class ControllerManager : MonoBehaviour
             if (hit.transform == planet)
             {
                 print("planet으로 이동");
-                //SceneManager.LoadScene(planetScene);
+                SceneManager.LoadScene(planetScene);
             }
             if (hit.transform == blackHole)
             {

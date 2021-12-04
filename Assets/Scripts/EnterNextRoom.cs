@@ -16,7 +16,7 @@ public class EnterNextRoom : MonoBehaviour
     public ButttonType butttonType;
 
     [SerializeField] Transform collider;
-    
+
     void Start()
     {
         leftGrip = xriInputAction.FindActionMap("XRI LeftHand").FindAction("Grip");
@@ -40,9 +40,25 @@ public class EnterNextRoom : MonoBehaviour
     }
     void GetButton(InputAction left, InputAction right)
     {
-        if (left.triggered && right.triggered)
+        if (left.triggered || right.triggered)
         {
-            SceneManager.LoadScene(1);
+            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+            {
+                if (hit.transform == collider)
+                {
+                    print("enter next scene");
+                    SceneManager.LoadScene(1);
+                }
+            }
+            if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
+            {              
+                if (hitR.transform == collider)
+                {
+                    print("enter next scene");
+                    SceneManager.LoadScene(1);
+                }
+            }
         }
+        
     }
 }
