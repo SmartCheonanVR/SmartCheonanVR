@@ -574,13 +574,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 3.9667134284973145
+    LocalX: 6.5009260177612305
     LocalY: 4.8965678215026855
-    LocalZ: -3015.8523235321045
+    LocalZ: -3015.8589305877686
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 3.9667134, y: 4.896568, z: -15.852324}
+  expectedPosition: {x: 6.500926, y: 4.896568, z: -15.858931}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -1063,13 +1063,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 4.421706676483154
+    LocalX: 7.211887359619141
     LocalY: 4.900863170623779
-    LocalZ: -3015.301748275757
+    LocalZ: -3015.7904720306396
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 4.4217067, y: 4.900863, z: -15.301748}
+  expectedPosition: {x: 7.2118874, y: 4.900863, z: -15.790472}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -1606,13 +1606,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 3.0284504890441895
+    LocalX: 5.034820079803467
     LocalY: 4.914704322814941
-    LocalZ: -3016.9876918792725
+    LocalZ: -3016.0001010894775
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 3.0284505, y: 4.9147043, z: -16.987692}
+  expectedPosition: {x: 5.03482, y: 4.9147043, z: -16.000101}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -1677,13 +1677,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 4.201735019683838
+    LocalX: 6.868165016174316
     LocalY: 4.8965678215026855
-    LocalZ: -3015.5679302215576
+    LocalZ: -3015.8235692977905
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 4.201735, y: 4.896568, z: -15.56793}
+  expectedPosition: {x: 6.868165, y: 4.896568, z: -15.823569}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -2499,13 +2499,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 4.053972244262695
+    LocalX: 6.637274742126465
     LocalY: 4.940238952636719
-    LocalZ: -3015.7467336654663
+    LocalZ: -3015.8458013534546
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 4.0539722, y: 4.940239, z: -15.746734}
+  expectedPosition: {x: 6.6372747, y: 4.940239, z: -15.845801}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -3376,7 +3376,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376872207}
-  m_LocalRotation: {x: -0, y: -0.4260147, z: -0, w: 0.9047163}
+  m_LocalRotation: {x: 0, y: -0.04797821, z: 0, w: 0.9988484}
   m_LocalPosition: {x: 5.225831, y: 3.48, z: -18.92}
   m_LocalScale: {x: 0.00023864012, y: 0.00023864012, z: 0.00023864012}
   m_ConstrainProportionsScale: 0
@@ -3393,7 +3393,7 @@ Transform:
   - {fileID: 1853584039}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -50.43, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5.5, z: 0}
 --- !u!1 &1446369449
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,13 +4654,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 0.9869842529296875
+    LocalX: 1.8448753356933594
     LocalY: 4.920670509338379
-    LocalZ: -3019.4580154418945
+    LocalZ: -3016.307258605957
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 0.98698425, y: 4.9206705, z: -19.458015}
+  expectedPosition: {x: 1.8448753, y: 4.9206705, z: -16.307259}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -4758,13 +4758,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 0.43348217010498047
+    LocalX: 0.9799871444702148
     LocalY: 4.909692764282227
-    LocalZ: -3020.127794265747
+    LocalZ: -3016.390537261963
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 0.43348217, y: 4.909693, z: -20.127794}
+  expectedPosition: {x: 0.97998714, y: 4.909693, z: -16.390537}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
@@ -5029,14 +5029,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882018505}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.9961947, z: 0, w: 0.08715588}
   m_LocalPosition: {x: -101.347916, y: 74.33068, z: 74.61541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 170, z: 0}
 --- !u!1 &1935254208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5513,13 +5513,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position:
-    LocalX: 3.7382283210754395
+    LocalX: 6.1439008712768555
     LocalY: 4.897045135498047
-    LocalZ: -3016.128807067871
+    LocalZ: -3015.8933086395264
     GlobalX: 0
     GlobalY: 0
     GlobalZ: 0
-  expectedPosition: {x: 3.7382283, y: 4.897045, z: -16.128807}
+  expectedPosition: {x: 6.143901, y: 4.897045, z: -15.893309}
   expectedPositionSet: 1
   positionSet: 1
   seed: 0
