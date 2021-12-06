@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.SceneManagement;
+using SimpleKeplerOrbits;
 
-public class SC3_Planet : MonoBehaviour
+public class SC3_Planet1 : MonoBehaviour
 {
     [SerializeField] XRRayInteractor leftRayInteractor;
     [SerializeField] XRRayInteractor rightRayInteractor;
@@ -79,6 +80,7 @@ public class SC3_Planet : MonoBehaviour
                 if (targetObj.transform.gameObject.transform.position == startPos)
                 {
                     targetObj.GetComponent<SphereCollider>().enabled = true;
+                    //targetObj.GetComponent<KeplerOrbitMover>().enabled = true;
                     planetMove = false;
                 }
                 break;
@@ -94,6 +96,7 @@ public class SC3_Planet : MonoBehaviour
         {
             planet = Planet.moveOn;
             targetObj = hit.transform.gameObject;
+            //targetObj.GetComponent<KeplerOrbitMover>().enabled = false;
             targetObj.GetComponent<SphereCollider>().enabled = false;
             startPos = hit.transform.gameObject.transform.position;
         }

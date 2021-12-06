@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/SC0.unity
+    guid: 3f54b3714944a3c46ae856c92f7e6186
+  - enabled: 1
     path: Assets/SC1_testing.unity
     guid: 21c0ca6f440f18540a42432470c403ef
   - enabled: 1
@@ -19,3 +22,4 @@ EditorBuildSettings:
     com.unity.input.settings: {fileID: 11400000, guid: 202b3dd838e37f8408e981a7ec59c306, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ee6156efc1cbfaf43a2f7d1918a604ca, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: ece3bb64abce197489e5ec650ee5f170, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 99deced17e7e4fd4abe4aeb6fd663d42, type: 2}

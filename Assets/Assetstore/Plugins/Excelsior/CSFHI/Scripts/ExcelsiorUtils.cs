@@ -1,51 +1,64 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-//using UnityEngine.SceneManager;
+using UnityEngine.SceneManagement;
 
 //EXCELSIOR SCRIPT - Collections of tools used for the holo interface examples showroom
 
 [AddComponentMenu("Excelsior/ExcelsiorUtils")]
-public class ExcelsiorUtils:MonoBehaviour {
+public class ExcelsiorUtils : MonoBehaviour
+{
     public GameObject target;
     public AudioSource audioSource;
     public AudioClip audioClip;
     public Text textContent;
     public Slider slider;
-	// Use this for initialization
-	void Start () {
-	
-	}
-    private void playSound() {
+    // Use this for initialization
+
+    //GameObject loadingUI;
+   
+
+    void Start()
+    {    
+    }
+    private void playSound()
+    {
         if (audioSource && audioSource.enabled)
             audioSource.clip = audioClip;
-            audioSource.Play();
+        audioSource.Play();
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-    public void SetPosition(int _scaleValue) {
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    public void SetPosition(int _scaleValue)
+    {
         target.transform.position = Vector3.one * _scaleValue;
         playSound();
     }
-    public void SetPositionAndScaleTo(GameObject _object) {
+    public void SetPositionAndScaleTo(GameObject _object)
+    {
         target.transform.localPosition = _object.transform.localPosition * -1;
         target.transform.localScale = _object.transform.localScale;
         playSound();
     }
-    public void SetUniformScale(int _scaleValue) {
+    public void SetUniformScale(int _scaleValue)
+    {
         target.transform.localScale = Vector3.one * _scaleValue;
         playSound();
     }
-    public void SetUniformWidthHeight(int _widthHeightValue) {
+    public void SetUniformWidthHeight(int _widthHeightValue)
+    {
         target.GetComponent<Image>().rectTransform.sizeDelta = Vector3.one * _widthHeightValue;
         playSound();
     }
-    public void SetImageColor(int _colorID) {
+    public void SetImageColor(int _colorID)
+    {
         Color32 _color;
-        switch (_colorID) {
+        switch (_colorID)
+        {
             case 1:
                 _color = Color.blue;
                 break;
@@ -59,15 +72,13 @@ public class ExcelsiorUtils:MonoBehaviour {
         target.GetComponent<Image>().color = _color;
         playSound();
     }
-    public void OpenWebPage() {
+    public void OpenWebPage()
+    {
         Application.OpenURL("http://www.assetstore.unity3d.com/#!/content/69794");
         playSound();
     }
-    public void GetSliderValue_ToText() {
-        textContent.text = slider.value.ToString();
-    }
-    public void OnStart()
+    public void GetSliderValue_ToText()
     {
-
-    }
+        textContent.text = slider.value.ToString();
+    }   
 }

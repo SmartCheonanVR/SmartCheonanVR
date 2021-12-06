@@ -23,7 +23,7 @@ public class InterfaceAnimManager : MonoBehaviour {
 
     public List<InterfaceAnmElement> elementsList = new List<InterfaceAnmElement>();
 
-    public bool autoStart = true; // call startAppear when GameObject is enabled
+    public bool autoStart; // call startAppear when GameObject is enabled
     public bool invertDelays = true; //copy appear delays of elements, and use those same delay in the reverse order for the disappear delays
     public bool cloneDelays = false; //copy appear delays of elements, and use those same delay in the same order for the disappear delays
     public float timer = 0; // incremented by on delay loop, when above an dis/appear delay, triggers the corresponding element

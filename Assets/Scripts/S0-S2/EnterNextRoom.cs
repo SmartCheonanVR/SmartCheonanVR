@@ -47,7 +47,7 @@ public class EnterNextRoom : MonoBehaviour
                 if (hit.transform == collider)
                 {
                     print("enter next scene");
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(2);
                 }
             }
             if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
@@ -55,7 +55,7 @@ public class EnterNextRoom : MonoBehaviour
                 if (hitR.transform == collider)
                 {
                     print("enter next scene");
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(2);
                 }
             }
         }

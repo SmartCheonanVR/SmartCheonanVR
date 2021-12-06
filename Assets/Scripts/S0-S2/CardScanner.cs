@@ -1,16 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
 public class CardScanner : MonoBehaviour
 {
+    [SerializeField] Animator doorAnim;
     bool cardTagged;
 
-    [SerializeField] Animator doorAnim;
-
+    //grab후에 카드 에니메이션 끄기 위해
+    GameObject card;
+    XRGrabInteractable isGrabbed;
+    Animator anim;
+    private void Start()
+    {
+        card = GameObject.FindGameObjectWithTag("Card");
+        isGrabbed = card.GetComponent<XRGrabInteractable>();
+        anim = card.GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (isGrabbed.isSelected)
+            anim.enabled = false;
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Card"))
+        if (other.gameObject == card)
         {
             UserEnter();
         }
