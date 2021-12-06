@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class RotPlanet : MonoBehaviour
 {
-    const float ROTPLANETS = 5.0f;
+    const float ROTPLANETS = 7.5f;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.left * Time.deltaTime * ROTPLANETS);
+        transform.Rotate(Vector3.up * Time.deltaTime * ROTPLANETS);
     }
 }
