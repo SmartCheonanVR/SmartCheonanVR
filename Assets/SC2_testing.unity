@@ -5221,7 +5221,7 @@ MonoBehaviour:
   planet: {fileID: 1129651520}
   blackHole: {fileID: 1339496}
   planetScene: SC3_testing
-  blackHoleScene: blackhole_1
+  blackHoleScene: SC4_BH
 --- !u!4 &1667684100
 Transform:
   m_ObjectHideFlags: 0
