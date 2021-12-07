@@ -37,7 +37,7 @@ public class SC3_Planet : MonoBehaviour
     void Start()
     {
         rightTrigger = xriInputAction.FindActionMap("XRI RightHand").FindAction("Trigger");
-        //leftTrigger = xriInputAction.FindActionMap("XRI LeftHand").FindAction("Trigger");
+        leftTrigger = xriInputAction.FindActionMap("XRI LeftHand").FindAction("Trigger");
     }
 
     // Update is called once per frame
@@ -50,7 +50,7 @@ public class SC3_Planet : MonoBehaviour
             case ButtonType.Trigger:
                 //GetButton(leftTrigger, rightTrigger);
                 Debug.Log("buttontype 스위치 진행중");
-                GetButton(rightTrigger);
+                GetButton(rightTrigger, leftTrigger);
                 break;
         }
 
@@ -108,10 +108,10 @@ public class SC3_Planet : MonoBehaviour
     }
 
     //void GetButton(InputAction left, InputAction right)
-    void GetButton(InputAction right)
+    void GetButton(InputAction right, InputAction left)
     {
         //if (left.triggered || right.triggered)
-        if (right.triggered)
+        if (right.triggered || left.triggered)
         {
             Debug.Log("trigger 눌림");
 

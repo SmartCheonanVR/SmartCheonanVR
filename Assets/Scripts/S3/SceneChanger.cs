@@ -8,16 +8,18 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SceneChanger : MonoBehaviour
 {
     [SerializeField] XRRayInteractor rightRayInteractor;
+    [SerializeField] XRRayInteractor leftRayInteractor;
     [SerializeField] InputActionAsset xriInputAction;
     [SerializeField] Transform collider;
 
-    InputAction rightTrigger;
+    InputAction rightTrigger, leftTrigger;
     public enum ButttonType { Trigger };
     public ButttonType butttonType;
 
     void Start()
     {
         rightTrigger = xriInputAction.FindActionMap("XRI RightHand").FindAction("Trigger");
+        leftTrigger = xriInputAction.FindActionMap("XRI LeftHand").FindAction("Trigger");
     }
 
     void Update()
@@ -26,14 +28,14 @@ public class SceneChanger : MonoBehaviour
         switch (butttonType)
         {
             case ButttonType.Trigger:
-                GetButton(rightTrigger);
+                GetButton(rightTrigger,leftTrigger);
                 break;
         }
     }
-    void GetButton(InputAction right)
+    void GetButton(InputAction right, InputAction left)
     {
         Debug.Log("1");
-        if (right.triggered)
+        if (right.triggered || left.triggered)
         {
             Debug.Log("2");
 
