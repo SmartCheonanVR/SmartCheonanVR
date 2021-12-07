@@ -9169,8 +9169,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\n\n\n\n\n\uC624\uB978\uC190 \uAC80\uC9C0\uBC84\uD2BC\uC5D0\n\n\uC704\uCE58\uD55C
-    \uD2B8\uB9AC\uAC70\uBC84\uD2BC\uC744\n\n\uB20C\uB7EC\uC11C \uC870\uC791\uD574\uC8FC\uC138\uC694"
+  m_Text: "\n\n\n\n\n\uC591\uC190 \uAC80\uC9C0\uBC84\uD2BC\uC5D0\n\n\uC704\uCE58\uD55C
+    \uD2B8\uB9AC\uAC70\uBC84\uD2BC\uC744\n\n\uB20C\uB7EC\uC11C \uC120\uD0DD\uD574\uC8FC\uC138\uC694"
 --- !u!225 &2764011726045778766
 CanvasGroup:
   m_ObjectHideFlags: 0
