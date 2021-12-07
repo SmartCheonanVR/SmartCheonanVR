@@ -6045,7 +6045,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 6286009638538217879, guid: d727464bd8469d24fa641519bce91a94, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -20081,8 +20081,8 @@ MonoBehaviour:
   butttonType: 0
   planet: {fileID: 1129651520}
   blackHole: {fileID: 1019824518}
-  planetScene: SC3_testing
-  blackHoleScene: SC4_BH
+  planetScene: SC3_testing2
+  blackHoleScene: SC4_testing
 --- !u!4 &1667684100
 Transform:
   m_ObjectHideFlags: 0
@@ -21115,7 +21115,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 0}
+  m_ModelPrefab: {fileID: 3581688074704919105, guid: c915bdb0e54105746b4366e322ac9914, type: 3}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
