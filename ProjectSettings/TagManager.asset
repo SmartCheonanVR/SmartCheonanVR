@@ -7,6 +7,7 @@ TagManager:
   - Card
   - Planet
   - Loading
+  - Changer
   layers:
   - Default
   - TransparentFX

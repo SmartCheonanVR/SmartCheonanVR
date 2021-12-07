@@ -40,11 +40,11 @@ public class SceneChanger : MonoBehaviour
             if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
             {
                 Debug.Log("3");
-                SceneManager.LoadScene(1);
-                //if (hitR.transform == GetComponent<Collider>())
-                //{
-                //    Debug.Log("4");
-                //}
+                if (hitR.transform.CompareTag("Changer"))
+                {
+                    SceneManager.LoadScene(2);
+                    Debug.Log("4");
+                }
             }
         }
     }
