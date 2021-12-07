@@ -555,8 +555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 465645860}
-  timeAppear: 0.75
-  timeDisappear: 0.25
+  timeAppear: 0.69
+  timeDisappear: 0.31
   recycling: 0
   sortID: 9
   animator: {fileID: 465645865}
@@ -2522,8 +2522,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1667211162}
-  timeAppear: 0.5
-  timeDisappear: 0.5
+  timeAppear: 0.46
+  timeDisappear: 0.53999996
   recycling: 0
   sortID: 6
   animator: {fileID: 1667211167}
@@ -2681,8 +2681,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1754342730}
-  timeAppear: 0.58
-  timeDisappear: 0.42000002
+  timeAppear: 0.53
+  timeDisappear: 0.47000003
   recycling: 0
   sortID: 7
   animator: {fileID: 0}
@@ -3346,8 +3346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475698244939}
-  timeAppear: 0.66
-  timeDisappear: 0.33999997
+  timeAppear: 0.61
+  timeDisappear: 0.39
   recycling: 0
   sortID: 8
   animator: {fileID: 2752502475698244943}
@@ -3389,7 +3389,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Moment in the
+  m_Text: Moments in the
 --- !u!95 &2752502475698244943
 Animator:
   serializedVersion: 4
@@ -3484,8 +3484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475705633875}
-  timeAppear: 0.41
-  timeDisappear: 0.59000003
+  timeAppear: 0.38
+  timeDisappear: 0.62
   recycling: 0
   sortID: 5
   animator: {fileID: 2752502475705633878}
@@ -3581,7 +3581,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2752502475901213380}
   m_LocalRotation: {x: -0.10347918, y: -6.8756942e-15, z: -4.243021e-15, w: 0.99463165}
-  m_LocalPosition: {x: 0, y: 0, z: -17}
+  m_LocalPosition: {x: 0, y: 0, z: -19.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3592,8 +3592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.2, y: -52}
-  m_SizeDelta: {x: 80, y: 40}
+  m_AnchoredPosition: {x: 42.2, y: -40.6}
+  m_SizeDelta: {x: 100.7, y: 20.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &2752502475901213432
 CanvasGroup:
@@ -3640,14 +3640,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6117647, g: 0.050980393, b: 0.24313726, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c843827c0281d5f429aa6ef62f053693, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3726,8 +3726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475901213380}
-  timeAppear: 1
-  timeDisappear: 0
+  timeAppear: 0.92
+  timeDisappear: 0.07999998
   recycling: 0
   sortID: 12
   animator: {fileID: 2752502475901213433}
@@ -3768,7 +3768,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2752502476076699171}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.00000002235174, y: -0, z: 3.1763733e-22, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3778,7 +3778,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &2752502476076699169
@@ -3805,8 +3805,9 @@ GameObject:
   - component: {fileID: 2752502476076699175}
   - component: {fileID: 2752502476076699174}
   - component: {fileID: 2752502476076699169}
+  - component: {fileID: 2752502476076699177}
   m_Layer: 0
-  m_Name: customText
+  m_Name: customButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3834,18 +3835,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c03f4cb96ba3a7143b598251535f16fb, type: 3}
-    m_FontSize: 8
-    m_FontStyle: 0
+    m_FontSize: 14
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 15
+    m_MaxSize: 30
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC785  \uC7A5  \uD558  \uAE30"
+  m_Text: "\uC785 \uC7A5 \uD558 \uAE30"
 --- !u!222 &2752502476076699175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3854,6 +3855,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2752502476076699171}
   m_CullTransparentMesh: 1
+--- !u!114 &2752502476076699177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2752502476076699171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573961e380f210b4d9d02153ca5ffa5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectRef: {fileID: 2752502476076699171}
+  timeAppear: 1
+  timeDisappear: 0
+  recycling: 0
+  sortID: 13
+  animator: {fileID: 0}
+  animClips: []
+  currentState: 3
+  isNested_IAM: 0
 --- !u!82 &2752502476409862608
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3997,6 +4019,7 @@ MonoBehaviour:
   - {fileID: 2752502477181188236}
   - {fileID: 2752502476747004846}
   - {fileID: 2752502475901213436}
+  - {fileID: 2752502476076699177}
   autoStart: 1
   invertDelays: 1
   cloneDelays: 0
@@ -4061,7 +4084,7 @@ RectTransform:
   m_GameObject: {fileID: 2752502476409862622}
   m_LocalRotation: {x: 0.08715575, y: -0, z: -0, w: 0.9961947}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.009, y: 0.009000003, z: 0.009000003}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2752502475488749360}
@@ -4098,8 +4121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476532327448}
-  timeAppear: 0.16
-  timeDisappear: 0.84000003
+  timeAppear: 0.15
+  timeDisappear: 0.85
   recycling: 0
   sortID: 2
   animator: {fileID: 2752502476532327455}
@@ -4273,8 +4296,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476656911372}
-  timeAppear: 0.33
-  timeDisappear: 0.66999996
+  timeAppear: 0.3
+  timeDisappear: 0.7
   recycling: 0
   sortID: 4
   animator: {fileID: 2752502476656911363}
@@ -4449,8 +4472,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476747004852}
-  timeAppear: 0.91
-  timeDisappear: 0.089999974
+  timeAppear: 0.84
+  timeDisappear: 0.16000003
   recycling: 0
   sortID: 11
   animator: {fileID: 2752502476747004840}
@@ -4586,8 +4609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476933411218}
-  timeAppear: 0.08
-  timeDisappear: 0.92
+  timeAppear: 0.07
+  timeDisappear: 0.93
   recycling: 0
   sortID: 1
   animator: {fileID: 2752502476933411217}
@@ -4668,9 +4691,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: c03f4cb96ba3a7143b598251535f16fb, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 20
     m_Alignment: 4
@@ -4679,7 +4702,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WELCOME
+  m_Text: "\uD658\uC601\uD569\uB2C8\uB2E4"
 --- !u!1 &2752502477181188234
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,8 +4757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502477181188234}
-  timeAppear: 0.83
-  timeDisappear: 0.17000002
+  timeAppear: 0.76
+  timeDisappear: 0.24000001
   recycling: 0
   sortID: 10
   animator: {fileID: 2752502477181188238}
@@ -4855,8 +4878,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502477250950036}
-  timeAppear: 0.25
-  timeDisappear: 0.75
+  timeAppear: 0.23
+  timeDisappear: 0.77
   recycling: 0
   sortID: 3
   animator: {fileID: 2752502477250950027}
