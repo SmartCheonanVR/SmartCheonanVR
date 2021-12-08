@@ -110,13 +110,23 @@ public class SC3_Planet : MonoBehaviour
     //void GetButton(InputAction left, InputAction right)
     void GetButton(InputAction right, InputAction left)
     {
-        //if (left.triggered || right.triggered)
+        Debug.Log("1버튼누름");
         if (right.triggered || left.triggered)
         {
+            Debug.Log("2버튼누름");
+            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit) || rightRayInteractor.TryGetCurrent3DRaycastHit(out hit))
+            {
+                Debug.Log("3버튼누름");
+                if (hit.transform.CompareTag("Planet"))
+                {
+                    Debug.Log("4버튼누름");
+                    if (!planetOn) planetMoveOn();
+                    if (planetOn) planetMoveOff();
+                }
+
+            }
             Debug.Log("trigger 눌림");
 
-            if (!planetOn) planetMoveOn();
-            if (planetOn) planetMoveOff();
         }
     }
 }

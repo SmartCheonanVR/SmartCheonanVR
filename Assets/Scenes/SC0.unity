@@ -525,8 +525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 465645860}
-  timeAppear: 0.69
-  timeDisappear: 0.31
+  timeAppear: 0.75
+  timeDisappear: 0.25
   recycling: 0
   sortID: 9
   animator: {fileID: 465645865}
@@ -2464,8 +2464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1667211162}
-  timeAppear: 0.46
-  timeDisappear: 0.53999996
+  timeAppear: 0.5
+  timeDisappear: 0.5
   recycling: 0
   sortID: 6
   animator: {fileID: 1667211167}
@@ -2623,8 +2623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1754342730}
-  timeAppear: 0.53
-  timeDisappear: 0.47000003
+  timeAppear: 0.58
+  timeDisappear: 0.42000002
   recycling: 0
   sortID: 7
   animator: {fileID: 0}
@@ -2692,6 +2692,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 377423929}
     m_Modifications:
+    - target: {fileID: 1910798477194385792, guid: fb39c5f3a241d7547866e360321c0d47, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1910798477194385794, guid: fb39c5f3a241d7547866e360321c0d47, type: 3}
       propertyPath: testLoop
       value: 1
@@ -4651,8 +4655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475698244939}
-  timeAppear: 0.61
-  timeDisappear: 0.39
+  timeAppear: 0.66
+  timeDisappear: 0.33999997
   recycling: 0
   sortID: 8
   animator: {fileID: 2752502475698244943}
@@ -4789,8 +4793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475705633875}
-  timeAppear: 0.38
-  timeDisappear: 0.62
+  timeAppear: 0.41
+  timeDisappear: 0.59000003
   recycling: 0
   sortID: 5
   animator: {fileID: 2752502475705633878}
@@ -5031,8 +5035,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475901213380}
-  timeAppear: 0.92
-  timeDisappear: 0.07999998
+  timeAppear: 1
+  timeDisappear: 0
   recycling: 0
   sortID: 12
   animator: {fileID: 2752502475901213433}
@@ -5172,11 +5176,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573961e380f210b4d9d02153ca5ffa5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectRef: {fileID: 2752502476076699171}
+  gameObjectRef: {fileID: 0}
   timeAppear: 1
-  timeDisappear: 0
-  recycling: 0
-  sortID: 13
+  timeDisappear: 1
+  recycling: 1
+  sortID: 0
   animator: {fileID: 0}
   animClips: []
   currentState: 3
@@ -5324,7 +5328,6 @@ MonoBehaviour:
   - {fileID: 2752502477181188236}
   - {fileID: 2752502476747004846}
   - {fileID: 2752502475901213436}
-  - {fileID: 2752502476076699177}
   autoStart: 1
   invertDelays: 1
   cloneDelays: 0
@@ -5426,8 +5429,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476532327448}
-  timeAppear: 0.15
-  timeDisappear: 0.85
+  timeAppear: 0.16
+  timeDisappear: 0.84000003
   recycling: 0
   sortID: 2
   animator: {fileID: 2752502476532327455}
@@ -5601,8 +5604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476656911372}
-  timeAppear: 0.3
-  timeDisappear: 0.7
+  timeAppear: 0.33
+  timeDisappear: 0.66999996
   recycling: 0
   sortID: 4
   animator: {fileID: 2752502476656911363}
@@ -5777,8 +5780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476747004852}
-  timeAppear: 0.84
-  timeDisappear: 0.16000003
+  timeAppear: 0.91
+  timeDisappear: 0.089999974
   recycling: 0
   sortID: 11
   animator: {fileID: 2752502476747004840}
@@ -5914,8 +5917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476933411218}
-  timeAppear: 0.07
-  timeDisappear: 0.93
+  timeAppear: 0.08
+  timeDisappear: 0.92
   recycling: 0
   sortID: 1
   animator: {fileID: 2752502476933411217}
@@ -6062,8 +6065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502477181188234}
-  timeAppear: 0.76
-  timeDisappear: 0.24000001
+  timeAppear: 0.83
+  timeDisappear: 0.17000002
   recycling: 0
   sortID: 10
   animator: {fileID: 2752502477181188238}
@@ -6183,8 +6186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502477250950036}
-  timeAppear: 0.23
-  timeDisappear: 0.77
+  timeAppear: 0.25
+  timeDisappear: 0.75
   recycling: 0
   sortID: 3
   animator: {fileID: 2752502477250950027}
