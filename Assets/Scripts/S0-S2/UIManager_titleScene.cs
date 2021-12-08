@@ -12,8 +12,6 @@ public class UIManager_titleScene : MonoBehaviour
     [SerializeField] InputActionAsset xriInputAction;
 
     InputAction leftGrip, leftTrigger, rightGrip, rightTrigger;
-
-    [SerializeField] Transform cam;
     public enum ButttonType { Trigger, Grip };
     public ButttonType butttonType;
 
@@ -46,8 +44,6 @@ public class UIManager_titleScene : MonoBehaviour
                 GetButton(leftTrigger, rightTrigger);
                 break;
         }
-
-        transform.position = cam.position;
     }
     void GetButton(InputAction left, InputAction right)
     {
