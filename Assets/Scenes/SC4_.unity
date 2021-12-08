@@ -512,7 +512,7 @@ MonoBehaviour:
   renderQueue:
     Group: 2000
     Offset: 0
-  seed: 953746008
+  seed: 158903456
   radius: 1000
   squash: 0.703
   starCount: 5000
@@ -546,7 +546,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   starRadiusMin: 1
-  starRadiusMax: 100
+  starRadiusMax: 50
   starRadiusBias: 5
   powerRgb: 1
   clampSize: 1

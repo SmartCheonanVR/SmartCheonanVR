@@ -20199,8 +20199,8 @@ MonoBehaviour:
   butttonType: 0
   planet: {fileID: 1129651520}
   blackHole: {fileID: 248543952}
-  planetScene: SC3_testing2
-  blackHoleScene: SC4_testing
+  planetScene: SC3_
+  blackHoleScene: SC4_
 --- !u!4 &1667684100
 Transform:
   m_ObjectHideFlags: 0

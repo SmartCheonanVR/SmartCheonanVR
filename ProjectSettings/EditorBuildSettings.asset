@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/SC0.unity
     guid: 3f54b3714944a3c46ae856c92f7e6186
   - enabled: 1
-    path: Assets/Scenes/SC1_testing.unity
+    path: Assets/Scenes/SC1_.unity
     guid: 21c0ca6f440f18540a42432470c403ef
   - enabled: 1
-    path: Assets/Scenes/SC2_testing.unity
+    path: Assets/Scenes/SC2_.unity
     guid: e77b385f35495a1438351a54e31ea3a5
   - enabled: 1
-    path: Assets/Scenes/SC3_testing2.unity
+    path: Assets/Scenes/SC3_.unity
     guid: 5a031a812b682ea46a17035b0d0e0d3c
   - enabled: 1
-    path: Assets/Scenes/SC4_testing.unity
+    path: Assets/Scenes/SC4_.unity
     guid: 2b9fa2285314d0a418d4e4ba49848bfb
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5041f342960cbc4458bd12f6a67d5ddc, type: 2}

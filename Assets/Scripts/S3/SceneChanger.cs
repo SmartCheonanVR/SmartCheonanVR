@@ -48,6 +48,16 @@ public class SceneChanger : MonoBehaviour
                     Debug.Log("4");
                 }
             }
+
+            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+            {
+                Debug.Log("3");
+                if (hit.transform.CompareTag("Changer"))
+                {
+                    SceneManager.LoadScene(2);
+                    Debug.Log("4");
+                }
+            }
         }
     }
 }
