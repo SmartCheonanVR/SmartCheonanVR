@@ -104,8 +104,8 @@ namespace SimpleKeplerOrbits
 
 		public static Vector3d MoveTowards(Vector3d current, Vector3d target, double maxDistanceDelta)
 		{
-			Vector3d vector3   = target - current;
-			double   magnitude = vector3.magnitude;
+			Vector3d vector3 = target - current;
+			double magnitude = vector3.magnitude;
 			if (magnitude <= maxDistanceDelta || magnitude == 0.0)
 			{
 				return target;

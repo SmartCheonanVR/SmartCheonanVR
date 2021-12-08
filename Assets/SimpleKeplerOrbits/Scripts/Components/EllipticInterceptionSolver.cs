@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace SimpleKeplerOrbits
 {
+	//빌드 시에 KeplerOrbitLineDisplay 관련 에러가 자꾸 생겨서 다 지움.
+
 	/// <summary>
 	/// Component for searching interception trajectory between two bodies, and it is considered as trajectory calculation helper in first approximation.
 	/// Goals: calc transition elliptic orbit from current orbit to target point, calculating transition duration, calculating velocity budget (delta-v);
@@ -654,14 +656,14 @@ namespace SimpleKeplerOrbits
 			if (!_currentTransition.Orbit.IsValidOrbit) return false;
 
 			KeplerOrbitMover instance;
-			if (_instantiateBodyTemplate != null)
-			{
+			//if (_instantiateBodyTemplate != null)
+			//{
 				instance = Instantiate(_instantiateBodyTemplate);
-			}
-			else
-			{
-				instance = new GameObject("transition_body", new Type[] { typeof(KeplerOrbitMover), typeof(KeplerOrbitLineDisplay) }).GetComponent<KeplerOrbitMover>();
-			}
+			//}
+			//else
+			//{
+			//	instance = new GameObject("transition_body", new Type[] { typeof(KeplerOrbitMover), typeof(KeplerOrbitLineDisplay) }).GetComponent<KeplerOrbitMover>();
+			//}
 
 			instance.AttractorSettings.AttractorMass   = (float)_currentTransition.Orbit.AttractorMass;
 			instance.AttractorSettings.AttractorObject = _currentTransition.Attractor;

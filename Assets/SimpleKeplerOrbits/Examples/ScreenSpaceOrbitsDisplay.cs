@@ -16,7 +16,7 @@ namespace SimpleKeplerOrbits.Examples
 		public class TargetItem
 		{
 			public KeplerOrbitMover       Body;
-			public KeplerOrbitLineDisplay LineDisplay;
+			//public KeplerOrbitLineDisplay LineDisplay;
 			public Vector3d[]             OrbitPoints;
 		}
 
@@ -34,45 +34,45 @@ namespace SimpleKeplerOrbits.Examples
 		private void Awake()
 		{
 			_spawnerNotifier                    =  GetComponent<SpawnNotifier>();
-			_spawnerNotifier.onBodySpawnedEvent += AddTargetBody;
+			//_spawnerNotifier.onBodySpawnedEvent += AddTargetBody;
 
-			var bodies = GameObject.FindObjectsOfType<KeplerOrbitMover>();
-			foreach (var item in bodies)
-			{
-				AddTargetBody(item);
-			}
+			//var bodies = GameObject.FindObjectsOfType<KeplerOrbitMover>();
+			//foreach (var item in bodies)
+			//{
+			//	AddTargetBody(item);
+			//}
 		}
 
-		private void OnDestroy()
-		{
-			if (_spawnerNotifier != null)
-			{
-				_spawnerNotifier.onBodySpawnedEvent -= AddTargetBody;
-			}
-		}
+		//private void OnDestroy()
+		//{
+		//	if (_spawnerNotifier != null)
+		//	{
+		//		_spawnerNotifier.onBodySpawnedEvent -= AddTargetBody;
+		//	}
+		//}
 
-		private void AddTargetBody(KeplerOrbitMover obj)
-		{
-			if (obj.AttractorSettings.AttractorObject == null || obj.OrbitData.MeanMotion <= 0) return;
+		//private void AddTargetBody(KeplerOrbitMover obj)
+		//{
+		//	if (obj.AttractorSettings.AttractorObject == null || obj.OrbitData.MeanMotion <= 0) return;
 
-			var lineDisplay = obj.GetComponent<KeplerOrbitLineDisplay>();
-			if (lineDisplay != null)
-			{
-				AddTargetBody(obj, lineDisplay);
-			}
-		}
+		//	var lineDisplay = obj.GetComponent<KeplerOrbitLineDisplay>();
+		//	if (lineDisplay != null)
+		//	{
+		//		AddTargetBody(obj, lineDisplay);
+		//	}
+		//}
 
-		private void AddTargetBody(KeplerOrbitMover body, KeplerOrbitLineDisplay lineDisplay)
-		{
-			_targets.Add(new TargetItem()
-				{
-					Body        = body,
-					LineDisplay = lineDisplay,
-					OrbitPoints = new Vector3d[0],
-				}
-			);
-			lineDisplay.enabled = false;
-		}
+		//private void AddTargetBody(KeplerOrbitMover body, KeplerOrbitLineDisplay lineDisplay)
+		//{
+		//	_targets.Add(new TargetItem()
+		//		{
+		//			Body        = body,
+		//			LineDisplay = lineDisplay,
+		//			OrbitPoints = new Vector3d[0],
+		//		}
+		//	);
+		//	lineDisplay.enabled = false;
+		//}
 
 		private void LateUpdate()
 		{
@@ -92,7 +92,7 @@ namespace SimpleKeplerOrbits.Examples
 			{
 				if (!item.Body.enabled || !item.Body.gameObject.activeInHierarchy) continue;
 				var orbitPoints = item.OrbitPoints;
-				item.Body.OrbitData.GetOrbitPointsNoAlloc(ref orbitPoints, item.LineDisplay.OrbitPointsCount, new Vector3d(), item.LineDisplay.MaxOrbitWorldUnitsDistance);
+				//item.Body.OrbitData.GetOrbitPointsNoAlloc(ref orbitPoints, item.LineDisplay.OrbitPointsCount, new Vector3d(), item.LineDisplay.MaxOrbitWorldUnitsDistance);
 				item.OrbitPoints = orbitPoints;
 				var attrPos         = item.Body.AttractorSettings.AttractorObject.position;
 				var projectedPoints = GetListFromPool();
