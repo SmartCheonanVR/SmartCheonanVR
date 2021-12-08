@@ -276,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &377423928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ Transform:
   m_Children:
   - {fileID: 482816606}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &423998672
 GameObject:
@@ -330,15 +330,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423998672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 3.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1772349455}
-  - {fileID: 855153622331148255}
-  - {fileID: 855153622633696047}
-  m_Father: {fileID: 478428094}
-  m_RootOrder: 0
+  - {fileID: 1333070172}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &423998674
 MonoBehaviour:
@@ -355,6 +353,7 @@ MonoBehaviour:
   leftRayInteractor: {fileID: 1663592089}
   rightRayInteractor: {fileID: 680330770}
   xriInputAction: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  cam: {fileID: 478428094}
   butttonType: 0
   startBtn: {fileID: 2115992368}
 --- !u!1 &454806531
@@ -526,8 +525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 465645860}
-  timeAppear: 0.69
-  timeDisappear: 0.31
+  timeAppear: 0.75
+  timeDisappear: 0.25
   recycling: 0
   sortID: 9
   animator: {fileID: 465645865}
@@ -641,8 +640,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 423998673}
+  m_Children: []
   m_Father: {fileID: 1187300396}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1015,7 +1013,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &680330766
 GameObject:
@@ -1740,6 +1738,40 @@ Transform:
   m_Father: {fileID: 1418029793}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333070171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333070172}
+  m_Layer: 0
+  m_Name: Main
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333070172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333070171}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.2, z: 4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2752502476409862623}
+  - {fileID: 855153622331148255}
+  - {fileID: 855153622633696047}
+  m_Father: {fileID: 423998673}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1350638807 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1910798477004763968, guid: fb39c5f3a241d7547866e360321c0d47, type: 3}
@@ -1811,7 +1843,7 @@ Transform:
   m_Children:
   - {fileID: 1187300396}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1418029794
 MonoBehaviour:
@@ -2432,8 +2464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1667211162}
-  timeAppear: 0.46
-  timeDisappear: 0.53999996
+  timeAppear: 0.5
+  timeDisappear: 0.5
   recycling: 0
   sortID: 6
   animator: {fileID: 1667211167}
@@ -2591,46 +2623,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1754342730}
-  timeAppear: 0.53
-  timeDisappear: 0.47000003
+  timeAppear: 0.58
+  timeDisappear: 0.42000002
   recycling: 0
   sortID: 7
   animator: {fileID: 0}
   animClips: []
   currentState: 3
   isNested_IAM: 0
---- !u!1 &1772349454
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1772349455}
-  m_Layer: 0
-  m_Name: Main
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1772349455
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1772349454}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2752502476409862623}
-  m_Father: {fileID: 423998673}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2003510480 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1910798475857352300, guid: fb39c5f3a241d7547866e360321c0d47, type: 3}
@@ -3547,15 +3547,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855153622331148192}
   m_LocalRotation: {x: 0.08508985, y: -0.21561591, z: 0.018863956, w: 0.97258097}
-  m_LocalPosition: {x: 0, y: 0, z: -0.57}
-  m_LocalScale: {x: 0.0067272005, y: 0.008409, z: 0.008409}
+  m_LocalPosition: {x: 0, y: 0, z: -0.56999993}
+  m_LocalScale: {x: 0.006727199, y: 0.008409, z: 0.008409003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 855153621706148019}
   - {fileID: 855153622942564678}
   - {fileID: 855153623127615247}
   - {fileID: 855153622747431554}
-  m_Father: {fileID: 423998673}
+  m_Father: {fileID: 1333070172}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 10, y: -25, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4013,15 +4013,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855153622633696080}
   m_LocalRotation: {x: 0.08508985, y: 0.21561599, z: -0.018863963, w: 0.9725809}
-  m_LocalPosition: {x: 0, y: 0, z: -0.57}
-  m_LocalScale: {x: 0.0067272005, y: 0.008409, z: 0.008409}
+  m_LocalPosition: {x: 0, y: 0, z: -0.56999993}
+  m_LocalScale: {x: 0.006727202, y: 0.008409001, z: 0.008409003}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 855153621069235267}
   - {fileID: 855153622574878134}
   - {fileID: 855153622357339135}
   - {fileID: 855153622175469170}
-  m_Father: {fileID: 423998673}
+  m_Father: {fileID: 1333070172}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 10, y: 25, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4619,8 +4619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475698244939}
-  timeAppear: 0.61
-  timeDisappear: 0.39
+  timeAppear: 0.66
+  timeDisappear: 0.33999997
   recycling: 0
   sortID: 8
   animator: {fileID: 2752502475698244943}
@@ -4757,8 +4757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475705633875}
-  timeAppear: 0.38
-  timeDisappear: 0.62
+  timeAppear: 0.41
+  timeDisappear: 0.59000003
   recycling: 0
   sortID: 5
   animator: {fileID: 2752502475705633878}
@@ -4999,8 +4999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502475901213380}
-  timeAppear: 0.92
-  timeDisappear: 0.07999998
+  timeAppear: 1
+  timeDisappear: 0
   recycling: 0
   sortID: 12
   animator: {fileID: 2752502475901213433}
@@ -5140,11 +5140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573961e380f210b4d9d02153ca5ffa5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectRef: {fileID: 2752502476076699171}
+  gameObjectRef: {fileID: 0}
   timeAppear: 1
-  timeDisappear: 0
-  recycling: 0
-  sortID: 13
+  timeDisappear: 1
+  recycling: 1
+  sortID: 0
   animator: {fileID: 0}
   animClips: []
   currentState: 3
@@ -5292,7 +5292,6 @@ MonoBehaviour:
   - {fileID: 2752502477181188236}
   - {fileID: 2752502476747004846}
   - {fileID: 2752502475901213436}
-  - {fileID: 2752502476076699177}
   autoStart: 1
   invertDelays: 1
   cloneDelays: 0
@@ -5342,7 +5341,7 @@ GameObject:
   - component: {fileID: 2752502476409862608}
   - component: {fileID: 2752502476409862620}
   m_Layer: 0
-  m_Name: Clean Welcome
+  m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5373,7 +5372,7 @@ RectTransform:
   - {fileID: 2752502477181188235}
   - {fileID: 2752502476747004853}
   - {fileID: 2752502475901213381}
-  m_Father: {fileID: 1772349455}
+  m_Father: {fileID: 1333070172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5394,8 +5393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476532327448}
-  timeAppear: 0.15
-  timeDisappear: 0.85
+  timeAppear: 0.16
+  timeDisappear: 0.84000003
   recycling: 0
   sortID: 2
   animator: {fileID: 2752502476532327455}
@@ -5569,8 +5568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476656911372}
-  timeAppear: 0.3
-  timeDisappear: 0.7
+  timeAppear: 0.33
+  timeDisappear: 0.66999996
   recycling: 0
   sortID: 4
   animator: {fileID: 2752502476656911363}
@@ -5745,8 +5744,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476747004852}
-  timeAppear: 0.84
-  timeDisappear: 0.16000003
+  timeAppear: 0.91
+  timeDisappear: 0.089999974
   recycling: 0
   sortID: 11
   animator: {fileID: 2752502476747004840}
@@ -5882,8 +5881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502476933411218}
-  timeAppear: 0.07
-  timeDisappear: 0.93
+  timeAppear: 0.08
+  timeDisappear: 0.92
   recycling: 0
   sortID: 1
   animator: {fileID: 2752502476933411217}
@@ -6030,8 +6029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502477181188234}
-  timeAppear: 0.76
-  timeDisappear: 0.24000001
+  timeAppear: 0.83
+  timeDisappear: 0.17000002
   recycling: 0
   sortID: 10
   animator: {fileID: 2752502477181188238}
@@ -6151,8 +6150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 2752502477250950036}
-  timeAppear: 0.23
-  timeDisappear: 0.77
+  timeAppear: 0.25
+  timeDisappear: 0.75
   recycling: 0
   sortID: 3
   animator: {fileID: 2752502477250950027}
