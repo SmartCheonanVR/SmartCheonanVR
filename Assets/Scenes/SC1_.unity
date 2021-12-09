@@ -490,7 +490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152507518}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.86, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1389,6 +1389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0595b0e5dfc54d84899553da595da8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerPrefab: {fileID: 399947673254491020, guid: 3a34595c7330d1749b4c1387591850d8, type: 3}
   leftRayInteractor: {fileID: 227880986}
   rightRayInteractor: {fileID: 1839087182}
   xriInputAction: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}

@@ -7,6 +7,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class EnterNextRoom : MonoBehaviour
 {
+    [SerializeField] GameObject timerPrefab;
+
     [SerializeField] XRRayInteractor leftRayInteractor;
     [SerializeField] XRRayInteractor rightRayInteractor;
     [SerializeField] InputActionAsset xriInputAction;
@@ -16,6 +18,8 @@ public class EnterNextRoom : MonoBehaviour
     public ButttonType butttonType;
 
     [SerializeField] Transform collider;
+
+
 
     void Start()
     {
@@ -46,19 +50,39 @@ public class EnterNextRoom : MonoBehaviour
             {
                 if (hit.transform == collider)
                 {
-                    print("enter next scene");
-                    SceneManager.LoadScene(2);
+                    EnterNextScene();
                 }
             }
             if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
-            {              
+            {
                 if (hitR.transform == collider)
                 {
-                    print("enter next scene");
-                    SceneManager.LoadScene(2);
+                    EnterNextScene();
                 }
             }
         }
-        
+    }
+
+
+    void EnterNextScene()
+    {
+        print("enter next scene");
+
+        GameObject timerPresent = GameObject.FindGameObjectWithTag("Timer");
+
+        if (timerPresent == null)
+        {
+            bool isActive = false;
+            if (!isActive)
+            {
+                GameObject timer = GameObject.Instantiate(timerPrefab);
+                isActive = true;
+            }
+        }
+        else
+        {
+            timerPresent.GetComponent<Timer>().curTime = 0;
+        }
+        SceneManager.LoadScene(2);
     }
 }

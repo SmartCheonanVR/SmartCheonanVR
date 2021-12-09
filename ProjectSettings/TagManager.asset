@@ -8,6 +8,7 @@ TagManager:
   - Planet
   - Loading
   - Changer
+  - Timer
   layers:
   - Default
   - TransparentFX
