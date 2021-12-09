@@ -59,11 +59,11 @@ public class SC3_Planet : MonoBehaviour
             case Planet.moveOn:
                 Debug.Log("움직임");
                 planetMove = true;
-                planetOn = true;
                 //targetObj.transform.Rotate(Vector3.up * Time.deltaTime * ROTQUATER);
                 targetObj.transform.position = Vector3.MoveTowards(targetObj.transform.position, destPos.gameObject.transform.position, ROTSPEED * Time.deltaTime);
                 if (targetObj.transform.gameObject.transform.position == destPos.gameObject.transform.position)
                 {
+                    planetOn = true;
                     targetObj.GetComponent<SphereCollider>().enabled = true;
                     planetMove = false;
                 }
@@ -111,22 +111,30 @@ public class SC3_Planet : MonoBehaviour
     void GetButton(InputAction right, InputAction left)
     {
         Debug.Log("1버튼누름");
-        if (right.triggered || left.triggered)
+        if (right.triggered)
         {
             Debug.Log("2버튼누름");
             if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit) || rightRayInteractor.TryGetCurrent3DRaycastHit(out hit))
             {
                 Debug.Log("3버튼누름");
-                if (hit.transform.CompareTag("Planet"))
-                {
-                    Debug.Log("4버튼누름");
-                    if (!planetOn) planetMoveOn();
-                    if (planetOn) planetMoveOff();
-                }
+                if (hit.transform.CompareTag("Planet") && !planetOn) planetMoveOn();
+                if (hit.transform.CompareTag("Planet") && planetOn) planetMoveOff();
 
             }
             Debug.Log("trigger 눌림");
+        }
 
+        if (left.triggered)
+        {
+            Debug.Log("2버튼누름");
+            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit) || rightRayInteractor.TryGetCurrent3DRaycastHit(out hit))
+            {
+                Debug.Log("3버튼누름");
+                if (hit.transform.CompareTag("Planet") && !planetOn) planetMoveOn();
+                if (hit.transform.CompareTag("Planet") && planetOn) planetMoveOff();
+
+            }
+            Debug.Log("trigger 눌림");
         }
     }
 }
