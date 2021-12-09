@@ -24,12 +24,11 @@ public class Timer : MonoBehaviour
             {
                 isActive = true;
                 print(0000);
-                popUp = GameObject.Instantiate(popUpPrefab);
-
                 cam = GameObject.FindGameObjectWithTag("MainCamera");
-                popUp.transform.parent = cam.transform;
-                popUp.transform.position = new Vector3(0, 0, 0);
-                popUp.transform.eulerAngles = new Vector3(0, 0, 0);
+                popUp = GameObject.Instantiate(popUpPrefab,cam.transform);
+
+                //popUp.transform.position = Vector3.zero;
+                //popUp.transform.eulerAngles = Vector3.zero;
             }
 
             //popUppre = popUp;
