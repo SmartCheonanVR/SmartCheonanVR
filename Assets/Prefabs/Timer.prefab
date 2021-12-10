@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curTime: 0
+  cam: {fileID: 0}
+  TimesUpFloat: 180
 --- !u!114 &2229983014587017769
 MonoBehaviour:
   m_ObjectHideFlags: 0
