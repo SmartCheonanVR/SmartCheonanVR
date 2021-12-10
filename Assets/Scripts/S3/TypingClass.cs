@@ -37,8 +37,8 @@ public class TypingClass : MonoBehaviour
         neptuneText = "해왕성\n지름: 지구의 3.9배\n중력: 1.14g\n태양으로부터 거리: 45억 km\n자전주기: 16시간\n공전주기: 165년\n온도: -214도";
         noneText = "";
 
-        StopCoroutine("TypingAction");
-        StartCoroutine("TypingAction");
+        //StopCoroutine("TypingAction");
+        //StartCoroutine("TypingAction");
     }
 
     // Used Coroutine
