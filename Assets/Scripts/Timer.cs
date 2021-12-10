@@ -10,6 +10,9 @@ public class Timer : MonoBehaviour
     GameObject popUp;
 
     public GameObject cam;
+
+    [SerializeField] float TimesUpFloat = 120;
+
     private void Start()
     {
         popUpPrefab = Resources.Load<GameObject>("Prefabs/TimesUpUI");
@@ -18,7 +21,7 @@ public class Timer : MonoBehaviour
     void Update()
     {
         curTime += Time.deltaTime;
-        if (curTime > 120)
+        if (curTime > TimesUpFloat)
         {
             if (!isActive)
             {
