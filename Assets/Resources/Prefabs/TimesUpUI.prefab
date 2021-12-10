@@ -500,10 +500,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1139735634152913083}
-  timeAppear: 1
-  timeDisappear: 0
+  timeAppear: 0.5
+  timeDisappear: 0.5
   recycling: 0
-  sortID: 3
+  sortID: 2
   animator: {fileID: 0}
   animClips: []
   currentState: 3
@@ -646,11 +646,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 573961e380f210b4d9d02153ca5ffa5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectRef: {fileID: 1139735634153600653}
-  timeAppear: 0.66
-  timeDisappear: 0.33999997
-  recycling: 0
-  sortID: 2
+  gameObjectRef: {fileID: 0}
+  timeAppear: 1
+  timeDisappear: 1
+  recycling: 1
+  sortID: 0
   animator: {fileID: 1139735634153600657}
   animClips:
   - {fileID: 7400000, guid: 695b42840dbe73b4f956c1d91931ab2e, type: 2}
@@ -686,7 +686,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139735634213929870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 0.0067272, y: 0.008409, z: 0.008409001}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -779,8 +779,9 @@ MonoBehaviour:
   elementsList:
   - {fileID: 1139735633032094966}
   - {fileID: 1139735634238367456}
-  - {fileID: 1139735634153600659}
   - {fileID: 1139735634152913086}
+  - {fileID: 3359753213100103410}
+  - {fileID: 5221960812039095950}
   autoStart: 1
   invertDelays: 1
   cloneDelays: 0
@@ -1019,8 +1020,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectRef: {fileID: 1139735634238367458}
-  timeAppear: 0.33
-  timeDisappear: 0.66999996
+  timeAppear: 0.25
+  timeDisappear: 0.75
   recycling: 0
   sortID: 1
   animator: {fileID: 1139735634238367462}
@@ -1042,6 +1043,7 @@ GameObject:
   - component: {fileID: 1139735634399078061}
   - component: {fileID: 1139735634399078060}
   - component: {fileID: 742746278167166754}
+  - component: {fileID: 3359753213100103410}
   m_Layer: 0
   m_Name: GotoTitle
   m_TagString: Untagged
@@ -1212,6 +1214,27 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3359753213100103410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139735634399078062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573961e380f210b4d9d02153ca5ffa5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectRef: {fileID: 1139735634399078062}
+  timeAppear: 0.75
+  timeDisappear: 0.25
+  recycling: 0
+  sortID: 3
+  animator: {fileID: 0}
+  animClips: []
+  currentState: 3
+  isNested_IAM: 0
 --- !u!1 &1139735634801966914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1248,7 @@ GameObject:
   - component: {fileID: 1139735634801966913}
   - component: {fileID: 1139735634801966912}
   - component: {fileID: 2263625975042893046}
+  - component: {fileID: 5221960812039095950}
   m_Layer: 0
   m_Name: CloseTab
   m_TagString: Untagged
@@ -1395,6 +1419,27 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5221960812039095950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139735634801966914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573961e380f210b4d9d02153ca5ffa5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectRef: {fileID: 1139735634801966914}
+  timeAppear: 1
+  timeDisappear: 0
+  recycling: 0
+  sortID: 4
+  animator: {fileID: 0}
+  animClips: []
+  currentState: 3
+  isNested_IAM: 0
 --- !u!1 &3531502157160516375
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
             if (!isActive)
             {
                 isActive = true;
-                print(0000);
+                print("time over");
                 cam = GameObject.FindGameObjectWithTag("MainCamera");
                 popUp = GameObject.Instantiate(popUpPrefab,cam.transform);
 
