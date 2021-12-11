@@ -21,12 +21,12 @@ public class UIManager_titleScene : MonoBehaviour
 
     [Header("Objects")]
     [SerializeField] Transform startBtn;
-    [SerializeField] Transform exitBtn;
+    //[SerializeField] Transform exitBtn;
 
-    [SerializeField] GameObject exitPannel;
+    //[SerializeField] GameObject exitPannel;
 
-    [SerializeField] Transform exitY;
-    [SerializeField] Transform exitN;
+    //[SerializeField] Transform exitY;
+    //[SerializeField] Transform exitN;
 
     InterfaceAnimManager mainUI;
     LoadingSceneEffect loadingUI;
@@ -50,11 +50,11 @@ public class UIManager_titleScene : MonoBehaviour
         {
             case ButttonType.Grip:
                 GetStartButton(leftGrip, rightGrip);
-                GetExitButton(leftGrip, rightGrip);
+                //GetExitButton(leftGrip, rightGrip);
                 break;
             case ButttonType.Trigger:
                 GetStartButton(leftTrigger, rightTrigger);
-                GetExitButton(leftGrip, rightGrip);
+                //GetExitButton(leftGrip, rightGrip);
 
                 break;
         }
@@ -86,28 +86,28 @@ public class UIManager_titleScene : MonoBehaviour
         }
     }
 
-    void GetExitButton(InputAction left, InputAction right)
-    {
-        if (left.triggered || right.triggered)
-        {
-            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
-            {
-                if (hit.transform == startBtn)
-                {
-                    print("exit");
-                    OnExit(left, right);
-                }
-            }
-            if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
-            {
-                if (hitR.transform == startBtn)
-                {
-                    print("exit");
-                    OnExit(left, right);
-                }
-            }
-        }
-    }
+    //void GetExitButton(InputAction left, InputAction right)
+    //{
+    //    if (left.triggered || right.triggered)
+    //    {
+    //        if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+    //        {
+    //            if (hit.transform == startBtn)
+    //            {
+    //                print("exit");
+    //                OnExit(left, right);
+    //            }
+    //        }
+    //        if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
+    //        {
+    //            if (hitR.transform == startBtn)
+    //            {
+    //                print("exit");
+    //                OnExit(left, right);
+    //            }
+    //        }
+    //    }
+    //}
 
     #endregion
 
@@ -119,36 +119,36 @@ public class UIManager_titleScene : MonoBehaviour
     }
 
 
-    void OnExit(InputAction left, InputAction right)
-    {
-        exitPannel.SetActive(true);
+    //void OnExit(InputAction left, InputAction right)
+    //{
+    //    exitPannel.SetActive(true);
 
-        if (left.triggered || right.triggered)
-        {
-            if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
-            {
-                if (hit.transform == exitY)
-                    EixtY();
+    //    if (left.triggered || right.triggered)
+    //    {
+    //        if (leftRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
+    //        {
+    //            if (hit.transform == exitY)
+    //                EixtY();
 
-                if (hit.transform == exitN)
-                    ExitN();
-            }
-            if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
-            {
-                if (hitR.transform == exitY)
-                    EixtY();
-                if (hitR.transform == exitN)
-                    ExitN();
-            }
-        }
-    }
+    //            if (hit.transform == exitN)
+    //                ExitN();
+    //        }
+    //        if (rightRayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hitR))
+    //        {
+    //            if (hitR.transform == exitY)
+    //                EixtY();
+    //            if (hitR.transform == exitN)
+    //                ExitN();
+    //        }
+    //    }
+    //}
 
-    void EixtY()
-    {
-        Application.Quit();
-    }
-    void ExitN()
-    {
-        exitPannel.SetActive(false);
-    }
+    //void EixtY()
+    //{
+    //    Application.Quit();
+    //}
+    //void ExitN()
+    //{
+    //    exitPannel.SetActive(false);
+    //}
 }
